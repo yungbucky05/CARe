@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B4C8CC"
+    >
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CARe"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:textSize="20sp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_person_24"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/header_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="#BABABA">
+
+            <TextView
+                android:id="@+id/maintenance_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maintenance Records"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/oil_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#f5f5f5"
+                android:text="Oil Change"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+               />
+
+            <Button
+                android:id="@+id/brake_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#f5f5f5"
+                android:text="Brake Inspection / Replacement"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp" />
+
+            <Button
+                android:id="@+id/air_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#f5f5f5"
+                android:text="Air Filter Replacement"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp" />
+
+            <Button
+                android:id="@+id/battery_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#f5f5f5"
+                android:text="Battery Check / Replacement"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp" />
+
+            <Button
+                android:id="@+id/coolant_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#f5f5f5"
+                android:text="Coolant Flush"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp" />
+
+            <Button
+                android:id="@+id/transmission_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#f5f5f5"
+                android:text="Transmission Service"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp" />
+
+            <Button
+                android:id="@+id/alignment_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#f5f5f5"
+                android:text="Alignment Check / Adjustment"
+                android:layout_marginTop="15dp"
+
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp" />
+
+            <Button
+                android:id="@+id/sparkplug_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#f5f5f5"
+                android:text="Sparkplug Replacement"
+
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp" />
+
+            <Button
+                android:id="@+id/tirerotation_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#f5f5f5"
+                android:text="Tire Rotation/Replacement"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp" />
+
+            <Button
+                android:id="@+id/timingbelt_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#f5f5f5"
+                android:textColor="@color/black"
+                android:text="Timing Belt/Chain Replacement"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp" />
+
+            <Button
+                android:id="@+id/suspensioncheck_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#f5f5f5"
+                android:text="Suspension Check"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp" />
+
+            <Button
+                android:id="@+id/fuelsystemservice_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#f5f5f5"
+                android:textColor="@color/black"
+                android:text="Fuel System Check"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp" />
+
+            <Button
+                android:id="@+id/exhaust_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#f5f5f5"
+                android:textColor="@color/black"
+                android:text="Exhaust System Check"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp" />
+
+            <Button
+                android:id="@+id/acsystem_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#f5f5f5"
+                android:text="AC System Service"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

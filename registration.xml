@@ -1,0 +1,135 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4A7C84"
+                android:paddingTop="195dp"
+                android:paddingBottom="375dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/caretext"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="CARe"/>
+                <TextView
+                    android:id="@+id/registext"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:layout_marginBottom="21dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="REGISTRATION"/>
+
+                <EditText
+                    android:id="@+id/emailEditText"
+                    android:layout_width="327dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/shapes"
+                    android:paddingTop="19dp"
+                    android:paddingBottom="9dp"
+                    android:paddingHorizontal="19dp"
+                    android:layout_marginBottom="19dp"
+                    android:layout_gravity="center"
+                    android:elevation="4dp"
+                    android:hint="email"
+                    android:textColor="#000000"
+                    />
+
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="327dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/shapes"
+                    android:paddingVertical="16dp"
+                    android:paddingHorizontal="21dp"
+                    android:layout_marginBottom="19dp"
+                    android:layout_gravity="center"
+                    android:hint="password"
+                    android:textColor="#000000"
+                    android:inputType="textPassword"/>
+
+                <EditText
+                    android:id="@+id/verifyPasswordEditText"
+                    android:layout_width="327dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/shapes"
+                    android:paddingTop="19dp"
+                    android:paddingBottom="9dp"
+                    android:paddingHorizontal="20dp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_gravity="center"
+                    android:elevation="4dp"
+                    android:hint="verify password"
+                    android:textColor="#000000"
+                    android:inputType="textPassword"/>
+
+
+
+                <TextView
+                    android:id="@+id/noteid"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Fields marked with an asterisk (*) are required."/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                    <Button
+                        android:id="@+id/registerButton"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="register"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@android:color/white"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/alreadyhaveanaccount"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Already have an account? Click here"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

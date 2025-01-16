@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="#B4C8CC">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CARe"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:textSize="20sp"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:layout_width="41dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_person_24"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/label_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/header_layout"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scheduled Maintenance"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#000"/>
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/label_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/label_text">
+            <TableLayout
+                android:layout_width="350dp"
+                android:layout_height="550dp"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/table"
+                android:layout_gravity="center_horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/table"
+                        android:padding="8dp"
+                        android:text="Service Provider"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:background="@drawable/table"
+                        android:padding="8dp"
+                        android:text="Service\nPerformed"
+                        android:textColor="@android:color/black"
+                        android:textSize="17sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:gravity="center"
+                        android:text="Date"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:padding="8dp"
+                        android:background="@drawable/table"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:gravity="center"
+                        android:text="Cost"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:padding="8dp"
+                        android:background="@drawable/table"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:text="Auto Care"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:padding="8dp"
+                        android:background="@drawable/table"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:text="Oil Change"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:padding="8dp"
+                        android:background="@drawable/table"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:text="10/29/\n2024"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:padding="8dp"
+                        android:background="@drawable/table"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:text="3000\nPHP"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:padding="8dp"
+                        android:background="@drawable/table"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

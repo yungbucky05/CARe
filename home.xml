@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B4C8CC"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CARe"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="user"
+            android:textSize="20dp"
+            android:layout_marginLeft="200dp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/baseline_person_24" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/home_background_shape" />
+
+        <ImageView
+            android:id="@+id/reminder_shape"
+            android:layout_width="350dp"
+            android:layout_height="230dp"
+            android:src="@drawable/reminder_shape"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:id="@+id/reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REMINDERS"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="50dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="400dp"
+            android:src="@drawable/l_background" />
+
+
+        <Button
+            android:id="@+id/maintenance_records"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:text="Maintenance Records"
+            android:layout_marginTop="460dp"
+            android:layout_marginLeft="50dp"
+            android:backgroundTint="@color/colorPrimary" />
+
+
+        <Button
+            android:id="@+id/scheduled_maintenance"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:text="Scheduled Maintenance"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="50dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_below="@+id/maintenance_records"/>
+
+
+        <Button
+            android:id="@+id/fuel_tracking"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:text="Fuel Tracking"
+           android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_below="@+id/scheduled_maintenance"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
